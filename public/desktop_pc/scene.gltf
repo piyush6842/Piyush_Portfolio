@@ -1,0 +1,17 @@
+{
+  "asset": {
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": []
+    }
+  ],
+  "nodes": [],
+  "materials": [],
+  "meshes": [],
+  "accessors": [],
+  "bufferViews": [],
+  "buffers": []
+} 
