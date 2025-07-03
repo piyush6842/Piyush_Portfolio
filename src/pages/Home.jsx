@@ -152,10 +152,10 @@ const ExperienceCard = ({ experience }) => (
 
 const Home = () => {
   return (
-    <div className="relative w-full">
+    <div className="relative w-full overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative min-h-[500px] lg:h-screen">
-        <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-col lg:flex-row items-start gap-5`}>
+        <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-col lg:flex-row items-start gap-5 w-full px-4 sm:px-8 md:px-16`}>
           <div className="flex flex-row lg:flex-col justify-center items-center mt-5 mb-5 lg:mb-0">
             <div className="w-3 h-3 lg:w-5 lg:h-5 rounded-full bg-[#915EFF]" />
             <div className="w-1 h-24 sm:h-40 lg:h-80 violet-gradient" />
@@ -163,11 +163,11 @@ const Home = () => {
           {/* Main content and avatar flex row/col */}
           <div className="flex flex-col-reverse lg:flex-row flex-1 items-center justify-between gap-8 w-full">
             <div className="z-10 flex-1 w-full text-center lg:text-left">
-              <h1 className="text-[28px] sm:text-[36px] md:text-[44px] lg:text-[56px] font-bold text-white">
+              <h1 className="text-[24px] sm:text-[32px] md:text-[40px] lg:text-[56px] font-bold text-white">
                 <span className="text-[#915EFF]">{useTypewriterLoop(TYPEWRITER_TEXTS)}</span>
                 <span className="text-[#915EFF] animate-pulse">|</span>
               </h1>
-              <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+              <p className={`${styles.heroSubText} mt-2 text-white-100 text-[14px] sm:text-[17px] md:text-[20px] lg:text-[24px]`}>
                 Full Stack Developer <br className="sm:block hidden" />
                 Currently Open to Exciting Full-Time Roles
               </p>
@@ -232,7 +232,7 @@ const Home = () => {
       </section>
 
       {/* Featured Section */}
-      <section id="featured" className="relative py-16 sm:py-20 bg-primary pb-8 sm:pb-0 mt-64 lg:mt-0">
+      <section id="featured" className="relative py-16 sm:py-20 bg-primary pb-8 sm:pb-0 mt-32 sm:mt-0">
         <div className={`${styles.paddingX} max-w-7xl mx-auto px-2 sm:px-6`}>
           <motion.div
             initial={{ opacity: 0 }}
@@ -240,7 +240,7 @@ const Home = () => {
             transition={{ duration: 1 }}
             className="mb-12 sm:mb-20"
           >
-            <h2 className="text-white font-bold text-[28px] sm:text-[32px] mb-8 sm:mb-10 flex items-center gap-2 mt-64 sm:mt-0 lg:mt-0 md:mt-0">
+            <h2 className="text-white font-bold text-[28px] sm:text-[32px] mb-8 sm:mb-10 flex items-center gap-2 mt-[500px] sm:mt-0 lg:mt-0 md:mt-0">
               <span className="text-[#915EFF] text-[26px] sm:text-[30px]">💼</span> Experience
             </h2>
             <div className="flex flex-col">
