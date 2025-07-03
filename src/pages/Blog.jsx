@@ -74,18 +74,18 @@ const Blog = () => {
   ];
 
   return (
-    <div className="relative z-0 min-h-screen pt-28">
+    <div className="relative z-0 min-h-screen pt-28 overflow-x-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-[#915EFF] rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob" />
-        <div className="absolute top-0 right-0 w-96 h-96 bg-[#7000FF] rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000" />
-        <div className="absolute bottom-0 left-1/2 w-96 h-96 bg-[#915EFF] rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000" />
+      <div className="absolute inset-0 -z-10 pointer-events-none select-none">
+        <div className="absolute top-0 left-0 w-72 h-72 sm:w-96 sm:h-96 bg-[#915EFF] rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob" />
+        <div className="absolute top-0 right-0 w-72 h-72 sm:w-96 sm:h-96 bg-[#7000FF] rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000" />
+        <div className="absolute bottom-0 left-1/2 w-72 h-72 sm:w-96 sm:h-96 bg-[#915EFF] rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000" />
       </div>
 
-      <div className={`${styles.padding} max-w-7xl mx-auto`}>
+      <div className="px-4 sm:px-8 md:px-16 py-10 max-w-4xl mx-auto w-full">
         <div className="mb-10">
           <motion.h1 
-            className="text-5xl font-bold text-white mb-4"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -93,7 +93,7 @@ const Blog = () => {
             Blog
           </motion.h1>
           <motion.p 
-            className="text-secondary text-lg"
+            className="text-secondary text-base sm:text-lg"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
